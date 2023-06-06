@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'rest_auth',
     'students_scores',
     'django_filters',
 ]
@@ -73,10 +72,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'scores.wsgi.application'
 
-AUTHENTICATION_BACKENDS = [
-    'django.contrib.auth.backends.ModelBackend',
-    'rest_auth.registration.backends.AuthenticationBackend',
-]
+# AUTHENTICATION_BACKENDS = [
+#     'django.contrib.auth.backends.ModelBackend',
+#     'rest_auth.registration.backends.AuthenticationBackend',
+# ]
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
