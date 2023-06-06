@@ -1,13 +1,9 @@
 from django.shortcuts import render
-
 from rest_framework import viewsets
 from .filters import *
 from django_filters.rest_framework import DjangoFilterBackend
-
-
 from .serializers import *
 from .models import *
-
 
 class StudentViewSet(viewsets.ModelViewSet):
     """
